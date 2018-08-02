@@ -1,0 +1,147 @@
+@import "./partials/setup";
+@import "./partials/utils";
+@import "./partials/typography";
+@import "./partials/mediaQueries";
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a, a:visited,a:active{
+    color: inherit;
+    text-decoration: none;
+}
+
+section .wrapper, footer .wrapper{
+    padding: 2rem;
+}
+
+.fa-ul{
+    margin-left: 1.5rem;
+}
+
+.wrapper{
+    width: 80%;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+
+    // Proportions
+    &__quarter{
+        flex: 1 0 25%;
+    }
+
+    &__third{
+        flex: 1 0 33%;
+        align-self: flex-start;
+        img{
+            width: 100%;
+            align-self: center;
+        }
+    }
+
+    &__half{
+        flex: 1 0 50%;
+    }
+
+    &__full{
+        flex: 1 0 100%;
+    }
+
+    // Justify classes
+    &__justifyBetween{
+        justify-content: space-between;
+    }
+
+    &__justifyCenter{
+        justify-content: center;
+    }
+
+    // used on the main header
+    &--hero{
+        height: 100vh;
+        background: url("../assets/image-1.jpeg") fixed center no-repeat;
+        background-size: cover; 
+        // color: $lightColour;
+    }
+
+    // defines background color
+    &--light{
+        background-color: $lightColour;
+    }
+    &--highlight{
+        background-color: $highlightColour;
+    }
+    &--contrast{
+        background-color: $contrastColour;
+        color: $lightColour;
+    }
+
+    &--wrap{
+        flex-wrap: wrap;
+    }
+
+    &--nowrap{
+        flex-wrap: nowrap;
+    }
+}
+
+.nav{
+    &__mainNav{
+        display: flex;
+        flex: 1 0 100%;
+
+    &__secondaryNav{
+        display: flex;
+        // flex-wrap: nowrap;
+        flex: 1 0 100%;
+    }
+    .nav__navList{
+        display: flex;
+    }
+}
+
+    &__listItem{
+        font-size: 1rem;
+        margin-right: 1rem;
+        &:last-of-type{
+            margin-right: 0;
+        }
+    }
+}
+
+.bodyText{
+    font-family: $bodyFont;
+    &--center{
+        text-align: center;
+    }
+}
+
+.heading{
+    font-family: $headerFont;
+    &__sectionHeader{
+        font-size: 1.4rem;
+        font-weight: 700;
+        width: 100%;
+        text-transform: uppercase;
+    }
+    &--center{
+        text-align: center;
+    }
+}
+
+.gallery{
+    width: 100%;
+    &__badge{
+        text-align: center;
+    }
+    &__threeColumn{
+        width: calc(33% - .5rem);
+    }
+    &.tile{
+        max-width: 50px;
+    }
+}

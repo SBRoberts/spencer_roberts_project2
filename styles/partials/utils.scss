@@ -1,0 +1,15 @@
+$headerFont: 'Raleway', sans-serif;
+$bodyFont: 'Lora', serif;
+
+$accentColour: #da331d;
+$highlightColour: #e5bf4b;
+$contrastColour: #2a2a2a;
+$lightColour: #fff;
+
+@mixin position($position, $top, $right, $bottom, $left) {
+    position: $position;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}

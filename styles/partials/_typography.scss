@@ -1,0 +1,8 @@
+html{
+    /* Fluid font sizing | scales based on viewport width and desired min/max font sizes*/
+    font-size: calc(18px + (24 - 18) * ((100vw - 320px) / (1440 - 320)));
+}
+
+h1{
+    font-size: 1rem;
+}
