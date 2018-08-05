@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles/style.css">
 
+    <!-- GOOGLE FONTS -->
     <link href="https://fonts.googleapis.com/css?family=Lora|Raleway:400,500,600,700" rel="stylesheet">
+
+    <!-- FLICKITY -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <title>Resaurant</title>
 </head>
 <body>
-    <header class="row__full row--hero row--contrast">
+    <header class="row__full row row--hero row--contrast">
         <nav class="row__full nav__mainNav">
             <div class="wrapper row row__justifyBetween">
-                <h1 class="heading--logo">Resaurant</h1>
+                <h1 class="heading heading--logo">Restaurant</h1>
                 <ul class="nav__navList">
                     <li class="nav__listItem"><a href="#home">Home</a></li>
                     <li class="nav__listItem"><a href="#menu">Menu</a></li>
@@ -24,77 +28,85 @@
                 </ul>
             </div>
         </nav>
-        <div class="wrapper row__full--justifyStart">
-            <h2 class="heading__sectionHeader--hero">Welcome</h1>
-            <h2 class="heading__sectionHeader--subHeader">To My Restaurant Website</h2>
-            <button class="btn__rounded btn--accent"><a href="#main">Start</a></button>
+        <div class="wrapper">
+            <div class="row__half">
+                <h2 class="heading heading__sectionHeader heading__sectionHeader--hero">Welcome</h1>
+                <h2 class="heading heading__sectionHeader">To My Restaurant Website</h2>
+                <button class="btn btn__rounded btn--accent"><a href="#main">Start</a></button>
+            </div>
         </div>
     </header>
     <main>
-        <section class="row__full row--light">
-            <div class="wrapper row row__justifyBetween">
-                <h2 class="heading__sectionHeader">We Are...</h2>
-                <div class="row__half gallery">
-                    <div class="gallery__tile--half">
-                        <img src="./assets/image-2.jpeg" alt="A healthy balanced brekfast">
-                        <h4 class="heading__title">Local</h4>
+        <section class="row__full row__parent row--light">
+            <div class="wrapper">
+                <h2 class="heading heading__sectionHeader heading--center">We Are...</h2>
+                <div class="row row__justifyBetween row__alignCenter row--nowrap">
+
+                    <!-- "We Are... images" -->
+                    <div class="row row__half gallery">
+                        <div class="gallery__tile gallery__tile--half row row__justifyCenter">
+                            <img src="./assets/image-2.jpeg" alt="A healthy balanced brekfast">
+                            <h4 class="heading__title">Local</h4>
+                        </div>
+                        <div class="gallery__tile gallery__tile--half row row__justifyCenter">
+                            <img src="./assets/image-3.jpeg" alt="Raw ingrediants for Modern cuisine">
+                            <h4 class="heading__title">Modern</h4>
+                        </div>
+                        <div class="gallery__tile gallery__tile--half row row__justifyCenter">
+                            <img src="./assets/image-4.jpeg" alt="A happy customer">
+                            <h4 class="heading__title">Friendly</h4>
+                        </div>
+                        <div class="gallery__tile gallery__tile--half row row__justifyCenter">
+                            <img src="./assets/image-5.jpeg" alt="Pancakes and fresh fruit">
+                            <h4 class="heading__title">Delicious</h4>
+                        </div>
                     </div>
-                    <div class="gallery__tile--half">
-                        <img src="./assets/image-3.jpeg" alt="Raw ingrediants for Modern cuisine">
-                        <h4 class="heading__title">Modern</h4>
+
+                    <!-- "We Are..."" Text -->
+                    <div class=" row row__half row__justifyCenter">
+                        <h3 class=" heading heading__title heading--center">About Us</h3>
+                        <p class="bodyText bodyText__primary bodyText--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, minus nemo! Recusandae facilis praesentium itaque consectetur aperiam odit iusto suscipit, at porro deserunt quaerat quisquam!</p>
+                        <button class="btn btn__rounded btn--accent">
+                            <a href="#">More</a>
+                        </button>
                     </div>
-                    <div class="gallery__tile--half">
-                        <img src="./assets/image-4.jpeg" alt="A happy customer">
-                        <h4 class="heading__title">Friendly</h4>
-                    </div>
-                    <div class="gallery__tile--half">
-                        <img src="./assets/image-5.jpeg" alt="Pancakes and fresh fruit">
-                        <h4 class="heading__title">Delicious</h4>
-                    </div>
-                </div>
-                <div class="row__half">
-                    <h3 class="heading--subheader">About Us</h3>
-                    <p class="bodyText__primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, minus nemo! Recusandae facilis praesentium itaque consectetur aperiam odit iusto suscipit, at porro deserunt quaerat quisquam!</p>
-                    <button class="btn__rounded btn--accent">
-                        <a href="#">More</a>
-                    </button>
                 </div>
             </div>
         </section>
 
-        <section class="row__full row--highlight">
+        <section class="row__full row__parent row--highlight">
             <div class="wrapper row row__justifyCenter">
-                <h2 class="heading__sectionHeader heading--center">Welcome to Restaurant</h2>
-                <p class="bodyText__primary bodyText--center">
+                <h2 class="heading heading__sectionHeader heading--center">Welcome to Restaurant</h2>
+                <p class="bodyText bodyText__primary bodyText--center">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse laudantium magni ad dolorum odit facere iusto at, animi tempora ratione adipisci quod minus rem sint labore in, iste fugiat explicabo perspiciatis id quibusdam voluptas blanditiis? Maiores pariatur vel ducimus culpa.
                 </p>
-                <button class="btn__rounded btn--contrast">
+                <button class="btn btn__rounded btn--contrast">
                     <a href="#view">view</a>
                 </button>
             </div>
         </section>
 
-        <section class="row__full row--light">
+        <section class="row__full  row--light">
             <div class="wrapper">
-                <h2 class="heading__sectionHeader heading--center">Services</h2>
+                <h2 class="heading heading__sectionHeader heading--center">Services</h2>
                 <div class="row__full row__justifyCenter gallery">
-                    <div class="row row__full row--nowrap">
-                        <div class="row__half gallery__panel--text">
-                            <h3 class="heading__title">Custom Catering</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laboriosam, perspiciatis atque distinctio a voluptatibus aliquam doloremque quia consequatur, blanditiis officiis, non nam culpa quod?</p>
+                    <div class="row row__full row__alignCenter row--nowrap">
+                        <div class="row__half gallery__panel gallery__panel--text">
+                            <h3 class="heading heading--center heading__title">Custom Catering</h3>
+                            <p class="bodyText bodyText--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, iusto hic facilis exercitationem quae nobis.</p>
                         </div>
                         <div class="row__half gallery__panel--img">
                             <img src="./assets/image-6.jpeg" alt="In Restaurant">
                         </div>
                     </div>
 
-                    <div class="row row__full row--nowrap">
+                    <div class="row row__full row--nowrap row__alignCenter">
                         <div class="row__half gallery__panel--img">
                             <img src="./assets/image-7.jpeg" alt="Restaurant Specialty Dish - Salmon">
                         </div>
-                        <div class="row__half gallery__panel--text">
-                            <h3 class="heading__title">Custom Catering</h3>
-                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi laboriosam, perspiciatis atque distinctio a voluptatibus aliquam doloremque quia consequatur, blanditiis officiis, non nam culpa quod?</p>
+                        <div class="row__half gallery__panel gallery__panel gallery__panel--text">
+                            <h3 class="heading heading--center heading__title">Custom Catering</h3>
+                            <p class="bodyText bodyText--center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci nesciunt maiores placeat beatae, eligendi enim!</p>
                         </div>
                     </div>
 
@@ -102,51 +114,77 @@
             </div>
         </section>
 
-        <section class="row__full row--contrast">
-            <h2 class="heading__sectionHeader heading--center">Reviews</h2>
-            <div class="row__full row__justifyCenter gallery__carousel">
-                <div class="main-carousel">
-                    <div class="row row__justifyCenter carousel-cell">
-                        <img src="./assets/image-8.jpeg" alt="J. Michaels - portrait">
-                        <p class="bodyText bodytext--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum natus totam fugit error explicabo perspiciatis.</p>
-                        <p class="bodyText bodytext--center">J. Michaels</p>
+        <section class="row__full row__parent row--contrast">
+            <div class="wrapper">
+                <h2 class="heading__sectionHeader heading--center">Reviews</h2>
+                <div class="main-carousel row__full row__justifyCenter gallery__carousel">
+                    <div class="carousel-cell row row__full row__justifyCenter">
+                        <div class=" row__justifyCenter">
+                            <img src="./assets/image-8.jpeg" alt="J. Michaels - portrait">
+                        </div>
+                        <div class=" row__justifyCenter">
+                            <p class="bodyText bodyText--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum natus totam fugit error explicabo perspiciatis.</p>
+                            <p class="bodyText bodyText--center">J. Michaels</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-cell row row__full row__justifyCenter">
+                        <div class=" row__justifyCenter">
+                            <img src="./assets/image-8.jpeg" alt="J. Michaels - portrait">
+                        </div>
+                        <div class=" row__justifyCenter">
+                            <p class="bodyText bodyText--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum natus totam fugit error explicabo perspiciatis.</p>
+                            <p class="bodyText bodyText--center">J. Michaels</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="row__full row--light">
-            <div class="row--light">
+            <div class="row--light row__parent">
                 <h2 class="heading__sectionHeader heading--center">Events</h2>
             </div>
-            <div class="row row__full row--nowrap row__justifyCenter">
-                <div class="row__third">
+            <div class="row row__full row--nowrap row__alignCenter row__justifyCenter gallery">
+                <div class="gallery__threeColumn gallery__threeColumn--full">
+                    <div class="gallery__overlay">
+                        <h3 class="heading heading__title heading--border">Sample Event</h3>
+                        <p class="bodyText bodyText--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, qui enim asperiores itaque minus nam.</p>
+                    </div>
                     <img src="./assets/image-9.jpeg" alt="A juicy burger">
                 </div>
-                <div class="row__third">
+                <div class="gallery__threeColumn gallery__threeColumn--full">
+                    <div class="gallery__overlay">
+                        <h3 class="heading heading__title heading--border">Sample Event</h3>
+                        <p class="bodyText bodyText--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, qui enim asperiores itaque minus nam.</p>
+                    </div>
                     <img src="./assets/image-10.jpeg" alt="A simple Parfait">
                 </div>
-                <div class="row__third">
+                <div class="gallery__threeColumn gallery__threeColumn--full">
+                    <div class="gallery__overlay">
+                        <h3 class="heading heading__title heading--border">Sample Event</h3>
+                        <p class="bodyText bodyText--center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, qui enim asperiores itaque minus nam.</p>
+                    </div>
                     <img src="./assets/image-11.jpeg" alt="Expediting the kitchen">
                 </div>
             </div>
         </section>
 
-        <section class="row__full row--light">
-            <div class="row row__justifyCenter">
-                <form action="POST" class="row row__justifyCenter">
+        <section class="row__full row__parent row--light">
+            <div class="row row__justifyCenter ">
+                <form action="POST" class="row row__justifyCenter row__alignCenter">
                     <label for="message" class="row__full">
-                        <h2 class="heading heading__sectionHeader heading--center">Ask a Question</h2>
+                        <h2 class="heading__sectionHeader heading--center">Ask a Question</h2>
                     </label>
                     <input type="text" id="message" placeholder="Your Message" class="row__full">
-                    <button class="btn__rounded btn--accent">
+                    <button class="btn btn__rounded btn--accent">
                         <a href="#">Send</a>
                     </button>
                 </form>
             </div>
         </section>
 
-        <section class="row__full row--highlight gallery">
+        <section class="row row__full row__parent row__alignCenter row--highlight gallery">
             <div class="wrapper">
                 <div class="row row__full row__justifyBetween">
                     <div class="row__quarter row__justifyCenter gallery__badge">
@@ -181,34 +219,34 @@
             </div>
         </section>
 
-        <section class="row__full">
+        <section class="row__full row__parent">
             <div class="wrapper">
-                <h2 class="heading heading__sectionHeader heading--center">Our Blog</h2>
+                <h2 class="heading__sectionHeader heading--center">Our Blog</h2>
                 <div class="row row__full row__justifyBetween gallery">
                     <div class="gallery__threeColumn">
                         <img src="./assets/image-12.jpeg" alt="A saucy steak">
-                        <h4 class="heading__title">Popular Steak Cuts</h4>
-                        <a href="#" class="bodyText__anchor--accent">Read More >></a>
+                        <h4 class="heading__title heading--left">Popular Steak Cuts</h4>
+                        <a href="#" class="bodyText bodyText__anchor--accent">Read More >></a>
                     </div>
                     <div class="gallery__threeColumn">
                         <img src="./assets/image-13.jpeg" alt="Appetizers">
-                        <h4 class="heading__title">Reservations are Booming!</h4>
-                        <a href="#" class="bodyText__anchor--accent">Read More >></a>
+                        <h4 class="heading__title heading--left">Reservations are Booming!</h4>
+                        <a href="#" class="bodyText bodyText__anchor--accent">Read More >></a>
                     </div>
                     <div class="gallery__threeColumn">
                         <img src="./assets/image-14.jpeg" alt="Clinking Wine Glasses">
-                        <h4 class="heading__title">Wine Tasting Events</h4>
-                        <a href="#" class="bodyText__anchor--accent">Read More >></a>
+                        <h4 class="heading__title heading--left">Wine Tasting Events</h4>
+                        <a href="#" class="bodyText bodyText__anchor--accent">Read More >></a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="row--contrast">
+    <footer class="row--contrast row__parent">
         <div class="wrapper">
             <div class="row row__full row__justifyBetween row--nowrap">
-                <div class="row row__third">
-                    <h4 class="heading heading__subHeading">Contact</h4>
+                <div class="row row__third row__third--gutter">
+                    <h4 class="heading heading__title heading--left">Contact</h4>
                     <ul class="iconList fa-ul bodyText">
                         <li>
                             <span class="fa-li">
@@ -230,62 +268,75 @@
                         </li>
                     </ul>
                 </div>
-                <div class="row row__third bodyText">
-                    <h4 class="heading heading__subHeading">About Us</h4>
+                <div class="row row__third row__third--gutter bodyText">
+                    <h4 class="heading heading__title heading--left">About Us</h4>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde harum doloribus commodi magnam! Officia laborum voluptatum explicabo inventore corporis, impedit nihil nisi facere fugiat. Iste facilis nobis debitis error non!</p>
                 </div>
-                <div class="row row__third">
-                    <h4 class="heading heading__subHeading">Instagram</h4>
+                <div class="row row__third row__third--gutter">
+                    <h4 class="heading heading__title heading--left">Instagram</h4>
                     <div class="gallery row row__justifyCenter">
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-15.jpeg" alt="" class="gallery__tile">
                         </a>
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-16.jpeg" alt="" class="gallery__tile">
                         </a>
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-17.jpeg" alt="" class="gallery__tile">
                         </a>
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-18.jpeg" alt="" class="gallery__tile">
                         </a>
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-19.jpeg" alt="" class="gallery__tile">
                         </a>
-                        <a href="#" class="row row__third">
+                        <a href="#" class="row row__quarter">
                             <img src="./assets/image-20.jpeg" alt="" class="gallery__tile">
+                        </a>
+                        <a href="#" class="row row__quarter">
+                            <img src="./assets/image-21.jpeg" alt="" class="gallery__tile">
+                        </a>
+                        <a href="#" class="row row__quarter">
+                            <img src="./assets/image-22.jpeg" alt="" class="gallery__tile">
                         </a>
                     </div>
                 </div>
             </div>
-            <div class="row row__justifyCenter">
-                <nav class="nav__secondaryNav">
-                    <div class="wrapper row row__justifyBetween">
-                        <h1 class="heading--logo">Resaurant</h1>
-                        <ul class=" nav__navList">
-                            <li class="nav__listItem">
-                                <a href="#home">Home</a>
-                            </li>
-                            <li class="nav__listItem">
-                                <a href="#menu">Menu</a>
-                            </li>
-                            <li class="nav__listItem">
-                                <a href="#blog">Blog</a>
-                            </li>
-                            <li class="nav__listItem">
-                                <a href="#contact">Contact</a>
-                            </li>
-                            <li class="nav__listItem">
-                                <a href="#about">About Us</a>
-                            </li>
-                        </ul>
-                    </div>
+        </div>
+        <div class="row row__justifyCenter">
+            <div class="wrapper">
+                <nav class="nav nav__secondaryNav">
+                    <h2 class="heading--logo heading--center">Resaurant</h2>
+                    <ul class="nav__navList">
+                        <li class="nav__listItem">
+                            <a href="#home">Home</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="#blog">Blog</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="#contact">Contact</a>
+                        </li>
+                        <li class="nav__listItem">
+                            <a href="#about">About Us</a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
     </footer>
 
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
+
+    <!-- FONT AWESOME -->
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
     crossorigin="anonymous"></script>
+
+    <!-- FLICKITY -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="./scripts/main.js"></script>
 </body>
 </html>
