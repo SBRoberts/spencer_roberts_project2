@@ -6,6 +6,8 @@ $highlightColour: #e5bf4b;
 $contrastColour: #2a2a2a;
 $lightColour: #fff;
 
+$spring: cubic-bezier(0, .1, .6, 3);
+
 $gutter: 1rem;
 
 @mixin position($position, $top, $right, $bottom, $left) {
@@ -14,5 +16,10 @@ $gutter: 1rem;
     right: $right;
     bottom: $bottom;
     left: $left;
+    transform: translateZ(0);
     transition: top .3s ease-out, right .3s ease-out, bottom, .3s ease-out, left .3s ease-out;
+}
+
+@mixin underline($width, $colour) {
+    border-bottom: #{$width} solid #{$colour};
 }
