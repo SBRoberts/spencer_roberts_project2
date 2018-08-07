@@ -35,7 +35,6 @@
             align-items: flex-start;
         }
         .logo{
-            // order: 1;
             flex-grow: 1;
         }
         ul{
@@ -48,7 +47,10 @@
             text-align: right;
             mix-blend-mode: difference;
             li{
-                margin: 0;
+                margin: .5rem 0;
+                a{
+                    font-size: .8rem;
+                }
             }
         }
         label{

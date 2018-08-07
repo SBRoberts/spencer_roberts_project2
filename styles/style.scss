@@ -2,6 +2,11 @@
 @import "./partials/utils";
 @import "./partials/typography";
 
+// Initial body colour set to provide backgroudn for elements with blend-mode
+body{
+    background-color: #fff;
+}
+
 ul{
     padding: 0;
     list-style: none;
@@ -21,16 +26,42 @@ section{
     margin: $gutter 0;
 }
 
+// styling for quirky one-off footer elements
+footer{
+    position: relative;
+    .copyright{
+        font-size: .4rem;
+    }
+    .socials{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        mix-blend-mode: difference;
+        svg{
+            font-size: .7rem;
+        }
+    }
+}
+
 input[type="checkbox"]{
     display: none;
 }
 
+// Font awesome list style overwrites
 .fa-ul{
     margin-left: 1.05rem;
     .fa-li{
         text-align: left;
     }
+    li{
+        margin: .5rem 0;
+    }
 }
+
+// Flickity Styling
 .carousel-main{
     width: 33.33%;
 }
@@ -52,13 +83,13 @@ input[type="checkbox"]{
     }
 }
 
-
 .wrapper{
     width: 70%;
     margin: 0 auto;
     transition: width .2s;
 }
 
+// Row block elements
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -147,6 +178,7 @@ input[type="checkbox"]{
     }
 }
 
+// Nav block elements
 .nav{
     &__mainNav{
         display: flex;
@@ -308,7 +340,7 @@ input[type="checkbox"]{
         @include position(absolute, 0,0,0,0);
         padding: 2rem;
         padding-top: 1rem;
-        transform: translateZ(999);
+        transform: translateZ(500);
         background-color: rgba($color: #222222, $alpha: 0);
         color: rgba($color: $lightColour, $alpha: 0);
         transition: opacity .4s, background .4s, color .6s, padding .6s, border .3s;
