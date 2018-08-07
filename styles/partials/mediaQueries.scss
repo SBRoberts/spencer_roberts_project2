@@ -23,6 +23,42 @@
         &__justifyBetween{
             justify-content: space-around;
         }
+        &--hero{
+            background-attachment: initial;
+        }
+    }
+    nav .row{
+        &__justifyBetween{
+            justify-content: space-between;
+        }
+        &__alignCenter{
+            align-items: flex-start;
+        }
+        .logo{
+            // order: 1;
+            flex-grow: 1;
+        }
+        ul{
+            z-index: 999;
+            position: fixed;
+            flex-direction: column;
+            align-self: flex-end;
+            top: 3rem;
+            right: 1rem;
+            text-align: right;
+            mix-blend-mode: difference;
+            li{
+                margin: 0;
+            }
+        }
+        label{
+            z-index: 999;
+            mix-blend-mode: difference;
+            position: fixed;
+            right: 1rem;
+            top: 1rem;
+            width: auto;
+        }
     }
     .gallery{
         &__threeColumn{
@@ -44,16 +80,21 @@
                 text-align: center;
             }
         }
-        &__panel--img{
-            display: flex;
-            order: 2;
-            justify-content: center;
-            margin-bottom: $gutter;
+        &__panel{
+            &--img{
+                display: flex;
+                order: 2;
+                justify-content: center;
+                margin-bottom: $gutter;
+            }
         }
         &__panel--text{
             margin-top: $gutter;
             order: 1;
             justify-content: center;
+        }
+        &__overlay{
+            padding: .5rem;
         }
     }
     footer{
@@ -89,7 +130,11 @@
         }
         &__half{
             width: 100%;
-            // margin: $gutter 0;
+        }
+    }
+    .gallery{
+        &__threeColumn{
+            width: 100%;
         }
     }
     footer{

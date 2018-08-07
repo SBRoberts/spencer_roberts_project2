@@ -17,8 +17,14 @@
 <body>
     <header class="row__full row row--hero row--contrast">
         <nav class="row__full nav__mainNav">
-            <div class="wrapper row row__justifyBetween">
+            <div class="wrapper row row__justifyBetween row__alignCenter">
                 <h1 class="heading heading--logo">Restaurant</h1>
+                
+                <!-- hamburger menu - only shown in tablet/mobile -->
+                <label for="hamburger" class="row row__justifyCenter">
+                    <input type="checkbox" id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </label>
                 <ul class="nav__navList">
                     <li class="nav__listItem bodyText__anchor"><a href="#home">Home</a></li>
                     <li class="nav__listItem bodyText__anchor"><a href="#menu">Menu</a></li>
@@ -306,7 +312,7 @@
         <div class="row row__justifyCenter">
             <div class="wrapper">
                 <nav class="nav nav__secondaryNav">
-                    <h2 class="heading--logo heading--center">Resaurant</h2>
+                    <h2 class="heading heading--logo heading--center">Resaurant</h2>
                     <ul class="nav__navList">
                         <li class="nav__listItem bodyText__anchor">
                             <a href="#home">Home</a>
