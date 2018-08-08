@@ -718,6 +718,9 @@ button {
   footer .row__third {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
+  footer .socials {
+    top: initial;
+    bottom: 0; }
   .carousel-cell {
     width: 100%;
     padding: 0 5vmax; } }
