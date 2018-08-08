@@ -25,10 +25,7 @@ app.init = () => {
     app.hamburgerMenu.on('change', function () {
         $(this).parent().find('ul').toggle(200)
     });
-}
 
-$(function(){
-    app.init()
     $('.main-carousel').flickity({
         // options
         cellAlign: 'left',
@@ -37,5 +34,9 @@ $(function(){
         pageDots: false,
         contain: true
     });
+}
+
+$(function(){
+    app.init()
 });
 
